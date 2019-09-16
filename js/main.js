@@ -1,3 +1,175 @@
+// $('#exampleModal').on('show.bs.modal', function (event) {
+//   // var button = $(event.relatedTarget)
+//   // var recipient = button.data('title')
+//   // var recipient2 = button.data('whatever')
+//   // // var recipient3 = button.data('src')
+//   // var modal = $(this)
+//   // modal.find('.modal-title').text(recipient)
+//   // // modal.find('.modal-body img').attr('src', recipient3)
+//   // modal.find('.modal-body p').text(recipient2)
+  
+// })
+
+
+$('.clickok').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la').text()));
+
+//show as confirm
+alertify.confirm("Uanzishaji wa Ofisi ya Kata",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+
+$('.clickok2').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la2').text()));
+
+//show as confirm
+alertify.confirm("Kamati ya Wachimbaji wadogo wadogo",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+$('.clickok3').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la3').text()));
+
+//show as confirm
+alertify.confirm("Kamati ya Wachimbaji wadogo wadogo",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+$('.clickok4').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la4').text()));
+
+//show as confirm
+alertify.confirm("Muda wa idhini",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+$('.clickok5').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la5').text()));
+
+//show as confirm
+alertify.confirm("Kufutwa kwa idhini",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+$('.clickok6').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la6').text()));
+
+//show as confirm
+alertify.confirm("Shughuli za wachimbaji wadogo wadogo",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+$('.clickok7').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la7').text()));
+
+//show as confirm
+alertify.confirm("Fidia ya matumizi ya ardhi",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+$('.clickok8').click(function(event){
+    var pre = document.createElement('pre');
+//custom style.
+pre.style.maxHeight = "400px";
+pre.style.margin = "0";
+pre.style.padding = "24px";
+pre.style.whiteSpace = "pre-wrap";
+pre.style.textAlign = "justify";
+pre.appendChild(document.createTextNode($('#la8').text()));
+
+//show as confirm
+alertify.confirm("Uuzaji wa madini",pre, function(){
+        alertify.success('Sawa');
+    },function(){
+        alertify.error('Funga');
+    }).set({labels:{ok:'Sawa', cancel: 'Funga'}, padding: false});
+});
+
+
+// .append($("<p></p>").text($("#myButton").data("info").text1));
+
+var tx = document.getElementsByTagName('textarea');
+for (var i = 0; i < tx.length; i++) {
+  tx[i].setAttribute('style', 'height:' + (tx[i].scrollHeight) + 'px;overflow-y:hidden;');
+  tx[i].addEventListener("input", OnInput, false);
+}
+
+function OnInput() {
+  this.style.height = 'auto';
+  this.style.height = (this.scrollHeight) + 'px';
+}
+
  function addNumbers()
                 {
                         var val1 = parseInt(document.getElementById("weight").value);
