@@ -2798,10 +2798,19 @@ select option {
     padding: 20px 0;
 }
 
-.course-card{
+.card{
   width: 22rem;
   margin: 0 auto 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 240px) and (max-width: 770px){
+  .card {
+  
+    margin-bottom: 30px;
+    width: 21rem;
+  
+  }
 }
 
 [data-whatever] :after {
